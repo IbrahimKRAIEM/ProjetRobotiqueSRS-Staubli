@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="exercice3">
+    <Locals>
+      <Local name="l_n1" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  movej(jDepart,tPince,mRapide)
+  call ouvrirPince()
+  
+  for l_n1 = 0 to 4 
+    movej(appro(Prise5[l_n1],{0,0,-50,0,0,0}),tPince,mRapide)
+    movel(Prise5[l_n1],tPince,mLent)
+    call fermerPince()
+    movel(appro(Prise5[l_n1],{0,0,-50,0,0,0}),tPince,mRapide)
+
+    movej(jDepart,tPince,mRapide)
+    movej(appro(pDepose[0],{0,0,-50,0,0,0}),tPince,mRapide)
+    movel(pDepose[0],tPince,mLent)
+    call ouvrirPince()
+    movel(appro(pDepose,{0,0,-50,0,0,0}),tPince,mRapide)
+  
+
+    movej(jDepart,tPince,mLent)
+    waitEndMove()
+    delay(3)
+  endFor
+  
+end]]></Code>
+  </Program>
+</Programs>

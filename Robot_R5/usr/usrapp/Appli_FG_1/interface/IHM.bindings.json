@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "bindings": [
+    {
+      "id": "rec1",
+      "attribute": "style.backgroundColor",
+      "data": "nCouleur_Autorisation[0]",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "nmb1",
+      "attribute": "value",
+      "data": "fcaisse[0].trsf.x",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "nmb2",
+      "attribute": "value",
+      "data": "fcaisse[0].trsf.y",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    },
+    {
+      "id": "nmb3",
+      "attribute": "value",
+      "data": "fcaisse[0].trsf.z",
+      "size": 1,
+      "direction": "r",
+      "refresh": 1
+    }
+  ],
+  "callbacks": [
+    {
+      "id": "btn1",
+      "event": "click",
+      "data": "BP_Validation",
+      "priority": 10
+    },
+    {
+      "id": "btn2",
+      "event": "click",
+      "data": "Init_Repere",
+      "priority": 10
+    }
+  ],
+  "events": []
+}

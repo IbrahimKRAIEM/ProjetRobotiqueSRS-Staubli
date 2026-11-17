@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Data/2">
+  <Datas>
+    <Data name="jDepart" access="private" xsi:type="array" type="jointRx" size="1">
+      <Value key="0" j3="90" j5="90" j6="90" />
+    </Data>
+    <Data name="mLent" access="private" xsi:type="array" type="mdesc" size="1">
+      <Value key="0" vel="10" blend="off" />
+    </Data>
+    <Data name="mNomSpeed" access="private" xsi:type="array" type="mdesc" size="1" />
+    <Data name="mRapide" access="private" xsi:type="array" type="mdesc" size="1">
+      <Value key="0" vel="25" blend="off" />
+    </Data>
+    <Data name="Prise5" access="private" xsi:type="array" type="pointRx" size="5">
+      <Value key="0" x="431.0804335" y="26.782897" z="-154.648647" rx="179.571045" ry="-2.0767627" rz="-88.582368" fatherId="world[0]" />
+      <Value key="1" x="447.943291" y="66.6588" z="-153.242684" rx="179.468283" ry="-1.214183" rz="-87.886126" fatherId="world[0]" />
+      <Value key="2" x="443.413957" y="103.41072" z="-155.933715" rx="179.299339" ry="-1.959881" rz="-87.727854" fatherId="world[0]" />
+      <Value key="3" x="442.540779" y="142.243832" z="-156.250835" rx="179.370693" ry="-1.0627126" rz="-86.483272" fatherId="world[0]" />
+      <Value key="4" x="448.0116706" y="178.916845" z="-155.959372" rx="178.810182" ry="0.0453744" rz="-89.949172" fatherId="world[0]" />
+    </Data>
+    <Data name="pDepose" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" x="103.42949" y="-354.0596717" z="-68.418859" rx="-176.797277" ry="-1.191891" rz="1.0467852" fatherId="world[0]" />
+    </Data>
+    <Data name="tPince" access="private" xsi:type="array" type="tool" size="1">
+      <Value key="0" z="120" fatherId="flange[0]" ioLink="ValveIO\valve1" />
+    </Data>
+    <Data name="bStart" access="private" xsi:type="array" type="bool" size="1" />
+    <Data name="nCouleur_Autorisation" access="private" xsi:type="array" type="string" size="1" />
+    <Data name="fcaisse" access="private" xsi:type="array" type="frame" size="1">
+      <Value key="0" fatherId="world[0]" />
+    </Data>
+    <Data name="plA" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" x="5" y="100" z="23" rx="-180" fatherId="fcaisse[0]" />
+    </Data>
+    <Data name="pRcaisse" access="private" xsi:type="array" type="pointRx" size="3">
+      <Value key="0" x="519.439885783333" y="-120.149697377671" z="-165.099001775512" rx="-179.999991526125" ry="6.52832163301057E-07" rz="3.27642281379904E-06" fatherId="world[0]" />
+      <Value key="1" x="519.439876404586" y="139.850292212372" z="-165.098973789677" rx="-179.999991372113" ry="-1.03012204155165E-07" rz="4.01298181690715E-06" fatherId="world[0]" />
+      <Value key="2" x="319.439927962114" y="-120.149711900373" z="-165.098985799063" rx="-179.999992133117" ry="1.76060323841222E-06" rz="3.02670493493255E-06" fatherId="world[0]" />
+    </Data>
+    <Data name="bInit_repere" access="private" xsi:type="array" type="bool" size="1" />
+  </Datas>
+</Database>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://www.staubli.com/robotics/VAL3/Project/3">
+  <Parameters version="s8.15.1Cs9_BS3177" stackSize="200000" millimeterUnit="true" />
+  <Programs>
+    <Program file="BP_Validation.pgx" />
+    <Program file="exercice2.pgx" />
+    <Program file="exercice3.pgx" />
+    <Program file="exercice4.pgx" />
+    <Program file="exercice5.pgx" />
+    <Program file="exercice6.pgx" />
+    <Program file="fermerPince.pgx" />
+    <Program file="IHM.pgx" />
+    <Program file="Init_Repere.pgx" />
+    <Program file="ouvrirPince.pgx" />
+    <Program file="start.pgx" />
+    <Program file="stop.pgx" />
+  </Programs>
+  <Database>
+    <Data file="Appli_FG_1.dtx" />
+  </Database>
+  <Libraries />
+</Project>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="exercice6">
+    <Locals>
+      <Local name="l_nNbKapla" type="num" xsi:type="array" size="1" />
+      <Local name="dest" type="pointRx" xsi:type="array" size="1" />
+      <Local name="Pas" type="trsf" xsi:type="array" size="1" />
+      <Local name="Decal" type="trsf" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  
+  wait(bInit_repere == true)
+  for l_nNbKapla = 0 to 4
+
+    Decal.x = l_nNbKapla * 40
+
+    dest = compose(plA,fcaisse,Decal)
+
+    bStart = false
+    nCouleur_Autorisation = "#80EA34"
+    movej(appro(dest,{0,0,-50,0,0,0}),tPince,mRapide)
+    movel(dest,tPince,mLent)
+    call fermerPince()
+    movel(appro(dest,{0,0,-50,0,0,0}),tPince,mRapide)  
+    movej(jDepart,tPince,mRapide)
+
+    wait(bStart == true)
+    nCouleur_Autorisation = "#EA3734"
+    movej(appro(pDepose[0],{0,0,-50,0,0,0}),tPince,mRapide)
+    movel(pDepose[0],tPince,mLent)
+    call ouvrirPince()
+    movel(appro(pDepose[0],{0,0,-50,0,0,0}),tPince,mRapide)
+    movej(jDepart,tPince,mLent)
+    waitEndMove()
+    
+
+  endFor
+end]]></Code>
+  </Program>
+</Programs>

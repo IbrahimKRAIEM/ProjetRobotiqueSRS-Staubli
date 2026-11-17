@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LocalController xmlns="http://www.staubli.com/robotics/controller/1">
+  <Version>s8.15.1Cs9_BS3177</Version>
+  <Teach>Sp2</Teach>
+  <Properties>
+    <Property type="SRS.VAL3Studio.Services.RobotOptionsControllerProperty">
+      <RobotOptions component="C:\Users\Public\Documents\Staubli.Public\3D\3.0\tx2_60-v1_0.zip" powerConnector="Horizontal" UL="false" hardStop="false" />
+    </Property>
+  </Properties>
+  <Target hostname="" name="">
+    <Context type="RemoteConnection" port="5653" username="default" />
+    <Context type="WebRemoteMaintenance" port="80" username="default" />
+    <Context type="VncRemoteMaintenance" port="5900" username="default" />
+  </Target>
+</LocalController>

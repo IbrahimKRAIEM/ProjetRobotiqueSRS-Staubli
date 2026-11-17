@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="Init_Repere">
+    <Code><![CDATA[begin
+  bInit_repere =true
+  setFrame(pRcaisse[0], pRcaisse[1], pRcaisse[2],fcaisse)
+end]]></Code>
+  </Program>
+</Programs>
